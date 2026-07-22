@@ -6,10 +6,9 @@
 
 <p align="center">
   <a href="mailto:cyliu.analyst@gmail.com"><img src="https://img.shields.io/badge/Email-cyliu.analyst%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <!-- TODO: replace with your real LinkedIn URL -->
-  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <!-- TODO: replace with your real blog / portfolio URL, or delete this badge -->
-  <a href="https://your-blog-or-portfolio.com"><img src="https://img.shields.io/badge/Blog-Read-FF5722?style=for-the-badge&logo=hashnode&logoColor=white" alt="Blog"/></a>
+  <a href="https://www.linkedin.com/in/chieh-yu-liu"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://sites.google.com/view/ralph-cy-liu/"><img src="https://img.shields.io/badge/Website-Visit-FF5722?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/></a>
+  <a href="https://www.amazon.com/dp/B0FGZ57659"><img src="https://img.shields.io/badge/Book-Amazon-FF9900?style=for-the-badge&logo=amazon&logoColor=white" alt="Book on Amazon"/></a>
   <a href="https://github.com/Ralph-Liu-Hub"><img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 </p>
 
@@ -34,28 +33,23 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 **Frontend**
 
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 **Backend & Data**
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnubash&logoColor=white)
 
 **DevOps & Tools**
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 ---
 
@@ -80,31 +74,36 @@
 
 ## 🚀 Project Highlights
 
-> My repositories are private, so here's what I've built and the results it drove.
-> **Replace the placeholder text below with your real projects, metrics, and (optionally) architecture diagrams or GIF demos.**
+> My repositories are private (client and personal work), so here's what I've built and how it's engineered.
 
-### 🔹 Project A — <Name / one-line pitch>
-**Stack:** `Vue.js` · `FastAPI` · `PostgreSQL` · `Docker`
-- ✅ What it does: _describe the problem it solves in one or two sentences._
-- 📈 Impact: _e.g. reduced processing time by 60%, served 10k+ monthly users, saved N hours/week._
-- 🧩 My role: _e.g. sole developer / led backend / owned data pipeline._
+### 🔹 Sophos Academy — CFA/CPA exam prep platform
+**Stack:** `Next.js 16` · `React 19` · `TypeScript` · `PostgreSQL (Supabase)` · `Tailwind CSS` · `Claude Sonnet`
+- **What it does:** Live product ([sophosacademy.org](https://sophosacademy.org)) selling expert-reviewed CFA/CPA mock exams, a free practice question bank, and SEO-optimized study guides, with its own purchase/dashboard/admin system.
+- **Stands out:** Full commercial stack shipped solo — auth (Google OAuth + magic link), payments (webhook-based checkout, no SDK), AI-generated exam questions with prompt caching, and a 195-test Vitest suite gating every CI run.
 
-### 🔹 Project B — <Name / one-line pitch>
-**Stack:** `Python` · `Pandas` · `Automation`
-- ✅ What it does: _describe it._
-- 📈 Impact: _quantify the outcome._
-- 🧩 My role: _your contribution._
+### 🔹 Project Artemis — AI recruiting platform
+**Stack:** `Next.js 14` · `Node.js/Express` · `TypeScript` · `PostgreSQL` · `Docker` · `Claude Sonnet`
+- **What it does:** End-to-end talent-acquisition tool — AI candidate sourcing, 4-dimension AI evaluation streamed live via SSE, auto-triage, interview scheduling by parsing inbound email replies, and AI-drafted candidate/interviewer emails.
+- **Stands out:** Multi-tenant SaaS architecture with per-org PostgreSQL schema isolation enforced by a custom CI lint gate, priority job queues (pg-boss) for live vs. background AI evaluation, and prompt-cached JDs so only marginal candidate tokens are billed per evaluation.
 
-### 🔹 Project C — <Name / one-line pitch>
-**Stack:** `<your tech>`
-- ✅ What it does: _describe it._
-- 📈 Impact: _quantify the outcome._
-- 🧩 My role: _your contribution._
+### 🔹 Mercury — Wyckoff Box-Zone AI trading system
+**Stack:** `Python (asyncio)` · `PostgreSQL` · `Redis` · `FastAPI` · `Docker` · `Claude API`
+- **What it does:** Fully automated crypto futures trading system on Gate.io, implementing the Wyckoff Box-Zone methodology end-to-end — zone detection, signal generation, risk-managed execution, and portfolio tracking.
+- **Stands out:** 8 independent asyncio agents communicating over a Redis pub/sub bus, a dedicated Sentinel agent enforcing a max-drawdown circuit breaker, and a weekly Evolution agent that uses Claude to tune strategy parameters from live performance.
+
+### 🔹 Project Ralph — agentic AI personal-branding pipeline
+**Stack:** `Python` · `GitHub Actions` · `Claude Code` · `LinkedIn API`
+- **What it does:** An agentic content pipeline that drafts, validates, and — after human review — automatically publishes this profile's LinkedIn posts on a fixed Mon/Wed/Fri schedule.
+- **Stands out:** Hard rule-gated validator (hashtag rules, mandatory verifiable references, length limits, credential-leak scanning) runs in CI on every PR; publishing authority always requires a human merge, never fully autonomous.
+
+### 🔹 Website-TheJob — company marketing site
+**Stack:** `Next.js` · `TypeScript` · `Vercel`
+- **What it does:** Production marketing website for [thejob.com.tw](https://thejob.com.tw).
 
 <!--
   Tip: to add an architecture diagram or a screen-recording GIF,
   drop the file in an `assets/` folder in this repo and embed it:
-  ![Project A demo](assets/project-a-demo.gif)
+  ![Project demo](assets/project-demo.gif)
 -->
 
 ---
@@ -115,8 +114,8 @@
 | --- | --- |
 | 📧 Email | [cyliu.analyst@gmail.com](mailto:cyliu.analyst@gmail.com) |
 | 💼 LinkedIn | [linkedin.com/in/chieh-yu-liu](https://www.linkedin.com/in/chieh-yu-liu) |
-| 📝 Personal Website | [sites.google.com/view/ralph-cy-liu)](https://sites.google.com/view/ralph-cy-liu/) |
-| 📝 Book:  | [www.amazon.com/No-Nonsense-Cryptocurrency-Investing-Concepts-Beginner-ebook](https://www.amazon.com/No-Nonsense-Cryptocurrency-Investing-Concepts-Beginner-ebook/dp/B0FGZ57659/))) |
+| 📝 Personal Website | [sites.google.com/view/ralph-cy-liu](https://sites.google.com/view/ralph-cy-liu/) |
+| 📚 Book | [No-Nonsense Cryptocurrency Investing Concepts for Beginners](https://www.amazon.com/dp/B0FGZ57659) |
 | 🐙 GitHub | [github.com/Ralph-Liu-Hub](https://github.com/Ralph-Liu-Hub) |
 
 <p align="center"><em>Thanks for stopping by — let's build something great together. 🚀</em></p>
