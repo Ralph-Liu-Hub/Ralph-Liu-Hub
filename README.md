@@ -114,8 +114,9 @@
 | Channel | Link |
 | --- | --- |
 | 📧 Email | [cyliu.analyst@gmail.com](mailto:cyliu.analyst@gmail.com) |
-| 💼 LinkedIn | [linkedin.com/in/YOUR-LINKEDIN-HANDLE](https://www.linkedin.com/in/chieh-yu-liu) |
-| 📝 Blog / Portfolio | [your-blog-or-portfolio.com](https://your-blog-or-portfolio.com) _(update me)_ |
+| 💼 LinkedIn | [linkedin.com/in/chieh-yu-liu](https://www.linkedin.com/in/chieh-yu-liu) |
+| 📝 Personal Website | [sites.google.com/view/ralph-cy-liu)](https://sites.google.com/view/ralph-cy-liu/) |
+| 📝 Book:  | [www.amazon.com/No-Nonsense-Cryptocurrency-Investing-Concepts-Beginner-ebook](https://www.amazon.com/No-Nonsense-Cryptocurrency-Investing-Concepts-Beginner-ebook/dp/B0FGZ57659/))) |
 | 🐙 GitHub | [github.com/Ralph-Liu-Hub](https://github.com/Ralph-Liu-Hub) |
 
 <p align="center"><em>Thanks for stopping by — let's build something great together. 🚀</em></p>
