@@ -53,52 +53,45 @@
 
 ---
 
-## 📊 GitHub Stats
-
-<!--
-  count_private=true and show_icons=true make the cards reflect PRIVATE contributions too.
-  For the commit/contribution numbers to include private work, enable
-  Settings → Profile → "Include private contributions on my profile" on GitHub.
--->
-
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Ralph-Liu-Hub&show_icons=true&count_private=true&include_all_commits=true&theme=tokyonight&hide_border=true" alt="Ralph's GitHub Stats"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ralph-Liu-Hub&layout=compact&count_private=true&theme=tokyonight&hide_border=true" alt="Top Languages"/>
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=Ralph-Liu-Hub&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
-</p>
-
----
-
 ## 🚀 Project Highlights
 
-> My repositories are private (client and personal work), so here's what I've built and how it's engineered.
+> My repositories are private (client and personal work), so here's what I've built, how it's engineered, and real weekly commit activity pulled straight from each repo.
 
 ### 🔹 Sophos Academy — CFA/CPA exam prep platform
 **Stack:** `Next.js 16` · `React 19` · `TypeScript` · `PostgreSQL (Supabase)` · `Tailwind CSS` · `Claude Sonnet`
 - **What it does:** Live product ([sophosacademy.org](https://sophosacademy.org)) selling expert-reviewed CFA/CPA mock exams, a free practice question bank, and SEO-optimized study guides, with its own purchase/dashboard/admin system.
 - **Stands out:** Full commercial stack shipped solo — auth (Google OAuth + magic link), payments (webhook-based checkout, no SDK), AI-generated exam questions with prompt caching, and a 195-test Vitest suite gating every CI run.
 
+![Sophos Academy activity](assets/activity-project-sophos.svg)
+
 ### 🔹 Project Artemis — AI recruiting platform
 **Stack:** `Next.js 14` · `Node.js/Express` · `TypeScript` · `PostgreSQL` · `Docker` · `Claude Sonnet`
 - **What it does:** End-to-end talent-acquisition tool — AI candidate sourcing, 4-dimension AI evaluation streamed live via SSE, auto-triage, interview scheduling by parsing inbound email replies, and AI-drafted candidate/interviewer emails.
 - **Stands out:** Multi-tenant SaaS architecture with per-org PostgreSQL schema isolation enforced by a custom CI lint gate, priority job queues (pg-boss) for live vs. background AI evaluation, and prompt-cached JDs so only marginal candidate tokens are billed per evaluation.
+
+![Project Artemis activity](assets/activity-project-artemis.svg)
 
 ### 🔹 Mercury — Wyckoff Box-Zone AI trading system
 **Stack:** `Python (asyncio)` · `PostgreSQL` · `Redis` · `FastAPI` · `Docker` · `Claude API`
 - **What it does:** Fully automated crypto futures trading system on Gate.io, implementing the Wyckoff Box-Zone methodology end-to-end — zone detection, signal generation, risk-managed execution, and portfolio tracking.
 - **Stands out:** 8 independent asyncio agents communicating over a Redis pub/sub bus, a dedicated Sentinel agent enforcing a max-drawdown circuit breaker, and a weekly Evolution agent that uses Claude to tune strategy parameters from live performance.
 
+![Mercury activity](assets/activity-project-mercury.svg)
+
 ### 🔹 Project Ralph — agentic AI personal-branding pipeline
 **Stack:** `Python` · `GitHub Actions` · `Claude Code` · `LinkedIn API`
 - **What it does:** An agentic content pipeline that drafts, validates, and — after human review — automatically publishes this profile's LinkedIn posts on a fixed Mon/Wed/Fri schedule.
 - **Stands out:** Hard rule-gated validator (hashtag rules, mandatory verifiable references, length limits, credential-leak scanning) runs in CI on every PR; publishing authority always requires a human merge, never fully autonomous.
 
+![Project Ralph activity](assets/activity-project-ralph.svg)
+
 ### 🔹 Website-TheJob — company marketing site
 **Stack:** `Next.js` · `TypeScript` · `Vercel`
 - **What it does:** Production marketing website for [thejob.com.tw](https://thejob.com.tw).
+
+![Website-TheJob activity](assets/activity-website-thejob.svg)
+
+<sub>Charts show weekly commit counts for the last 52 weeks, pulled from each repo's real commit history and refreshed automatically (see below).</sub>
 
 <!--
   Tip: to add an architecture diagram or a screen-recording GIF,
