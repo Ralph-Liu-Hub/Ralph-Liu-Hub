@@ -9,6 +9,7 @@ import os
 import subprocess
 import sys
 import time
+from datetime import datetime, timezone
 
 REPOS = [
     "Website-TheJob",
@@ -49,7 +50,16 @@ def fetch_commit_activity(repo, token, retries=6, delay=3):
     raise RuntimeError(f"commit_activity for {repo} not ready after {retries} attempts")
 
 
+def chart_start_date():
+    """Most recent May 1st (this year if we're past May, else last year)."""
+    now = datetime.now(timezone.utc)
+    year = now.year if now.month >= 5 else now.year - 1
+    return datetime(year, 5, 1, tzinfo=timezone.utc)
+
+
 def render_svg(repo, weeks):
+    start = chart_start_date()
+    weeks = [w for w in weeks if w["week"] >= start.timestamp()] or weeks
     totals = [w["total"] for w in weeks]
     max_val = max(totals) or 1
     n = len(totals)
@@ -70,7 +80,7 @@ def render_svg(repo, weeks):
     total_commits = sum(totals)
     recent_commits = sum(totals[-8:])
     label = (
-        f"{repo} — {total_commits} commits / 52 weeks "
+        f"{repo} — {total_commits} commits since {start.strftime('%b %Y')} "
         f"({recent_commits} in last 8 weeks)"
     )
 
